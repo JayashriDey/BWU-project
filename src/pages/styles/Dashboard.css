@@ -1,0 +1,188 @@
+body.dashboard {
+  background-color: #fff;
+}
+
+.dashboard-container,
+.profile-overview-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profile-overview-container {
+  flex-direction: row;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-heading,
+.section-heading {
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(101.26deg, #003366 41.7%, #0066CC 101.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.dashboard-heading {
+  font-size: 3rem;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.user-profile,
+.project-overview,
+.mentor-section,
+.learning-resources,
+.notifications {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #e6f0ff, #f2f7ff, #e6f0ff);
+  background-size: 200% 100%;
+  animation: gradient-animation 3s linear infinite;
+  border-radius: 20px;
+}
+
+.resource-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resource-item,
+.notification-text {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.resource-item {
+  text-decoration: none;
+  color: #003366;
+}
+
+.resource-item:hover {
+  text-decoration: underline;
+}
+
+.logout-btn {
+  display: inline-block;
+  font-size: 0.8rem !important;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dashboard button {
+  background-color: #136fd6;
+  border-radius: 50em;
+  color: #fff;
+  font-family: Gilroy, sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 12px 24px;
+  text-align: center;
+  transition: background-color .3s ease;
+  border: none;
+}
+
+.dashboard button:hover {
+  background-color: #0f5ca8;
+}
+
+@media screen and (max-width: 767px) {
+  .dashboard-heading {
+    font-size: 2.5rem;
+  }
+  .section-heading {
+    font-size: 2rem;
+  }
+  .profile-overview-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-profile,
+  .project-overview,
+  .mentor-section {
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+    padding: 24px;
+  }
+}
+/* Dark Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Edit Profile Form CSS */
+.edit-profile-form {
+  color: black;
+  max-width: 800px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Heading */
+.edit-profile-form h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  background: linear-gradient(101.26deg, #003366 41.7%, #0066CC 101.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Form input styles */
+.edit-profile-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.edit-profile-form input {
+  font-family: 'Gilroy', sans-serif;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button styles */
+.edit-profile-form button {
+  font-family: 'Gilroy', sans-serif;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #000000, #333333, #555555, #000000);
+  background-size: 200% 100%;
+  animation: DarkGradientAnimation 3s linear infinite;
+}

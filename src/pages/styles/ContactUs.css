@@ -1,0 +1,79 @@
+/* Contact Us Page CSS */
+.contact-us-page {
+    color: black;
+    background: linear-gradient(to right, #2c3e50, #4c669f); 
+  }
+  
+  /* Contact Us Container */
+  .contact-us-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .image-container-contact {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .image-container-contact img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .contact-form-h1{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  .contact-form-p {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+    color: green;
+  }
+  
+  /* Form input styles */
+  .contact-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+  }
+  
+  .contact-form-group input,
+  .contact-form-group textarea {
+    font-family: 'Gilroy', sans-serif;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .contact-form-group textarea {
+    height: 250px;
+  }
+  
+  /* Button styles */
+  .contact-btn {
+    font-family: 'Gilroy', sans-serif;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #000000, #333333, #555555, #000000);
+    background-size: 200% 100%;
+    animation: DarkGradientAnimation 3s linear infinite;
+  }
+  
